@@ -19,5 +19,6 @@ from django.urls import path
 from ejercicioApp.views import renderHome,renderCatalogos
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', renderHome),
 ]
