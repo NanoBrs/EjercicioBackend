@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static "css/catalogo.css" %}">
+
+    <title>Home</title>
+    
+</head>
+<body>
+    <div id="Contenedor">
+        <h1>Información del usuario</h1>
+        <img id="foto" src="{%static "images/ojo.jpg" %}" >
+        <ul id="texto">
+            <li>
+                ID: {{ID}}
+            </li>
+            <li>
+                Nombre: {{Nombre}}
+            </li>
+            <li>
+                Email: {{Email}}
+            </li>
+        </ul>
+    </div>
+    
+    
+</body>
+</html>
